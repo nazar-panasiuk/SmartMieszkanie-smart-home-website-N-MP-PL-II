@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>SmartMieszkanie</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta
+            content="inteligentny dom, nowoczesne technologie, automatyka domowa, smart home, sterowanie głosowe, inteligentne urządzenia, systemy bezpieczeństwa, oświetlenie smart, zdalne sterowanie, innowacyjne rozwiązania"
+            name="keywords"
+        />
+        <meta
+            content="Odkryj nowoczesne technologie dla inteligentnego domu. Sterowanie głosem, automatyka, inteligentne urządzenia i innowacyjne rozwiązania dla Twojego komfortu i bezpieczeństwa."
+            name="description"
+        />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Montserrat:wght@200;400;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar start -->
+        <div
+            class="container-fluid border-bottom bg-light wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div
+                class="container topbar bg-primary d-none d-lg-block py-2"
+                style="border-radius: 0 40px"
+            >
+                <div class="d-flex justify-content-between">
+                    <div class="top-info ps-2">
+                        <small class="me-3"
+                            ><i
+                                class="fas fa-map-marker-alt me-2 text-secondary"
+                            ></i>
+                            <a href="#" class="text-white"
+                                >Кенесары көшесі 20, Astana 010000</a
+                            ></small
+                        >
+                        <small class="me-3"
+                            ><i class="fas fa-envelope me-2 text-secondary"></i
+                            ><a href="#" class="text-white"
+                                >smart_mieszkanie@gmail.com</a
+                            ></small
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="container px-0">
+                <nav class="navbar navbar-light navbar-expand-xl py-3">
+                    <a href="index.html" class="navbar-brand"
+                        ><h1 class="text-primary display-6">
+                            Smart<span class="text-secondary">Mieszkanie</span>
+                        </h1></a
+                    >
+                    <button
+                        class="navbar-toggler py-2 px-3"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse"
+                    >
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="index.html" class="nav-item nav-link"
+                                >Strona główna</a
+                            >
+                            <a href="about.html" class="nav-item nav-link"
+                                >O nas</a
+                            >
+                            <a href="service.html" class="nav-item nav-link"
+                                >Usługi</a
+                            >
+                            <a href="testimonial.html" class="nav-item nav-link"
+                                >Opinie</a
+                            >
+                            <a
+                                href="contact.html"
+                                class="nav-item nav-link active"
+                                >Kontakt</a
+                            >
+                        </div>
+                        <div class="d-flex me-4">
+                            <div
+                                id="phone-tada"
+                                class="d-flex align-items-center justify-content-center"
+                            >
+                                <a
+                                    href=""
+                                    class="position-relative wow tada"
+                                    data-wow-delay=".9s"
+                                >
+                                    <i
+                                        class="fa fa-phone-alt text-primary fa-2x me-4"
+                                    ></i>
+                                    <div
+                                        class="position-absolute"
+                                        style="top: -7px; left: 20px"
+                                    >
+                                        <span
+                                            ><i
+                                                class="fa fa-comment-dots text-secondary"
+                                            ></i
+                                        ></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="d-flex flex-column pe-3 border-end border-primary"
+                            >
+                                <span class="text-primary">Masz pytania?</span>
+                                <a href="tel:77011551322"
+                                    ><span class="text-secondary"
+                                        >Darmowy numer: +77011551322</span
+                                    ></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Page Header Start -->
+        <div
+            class="container-fluid page-header py-5 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container text-center py-5">
+                <h1 class="display-2 text-white mb-4">Skontaktuj się z nami</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center mb-0">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Strona główna</a>
+                        </li>
+                        <li
+                            class="breadcrumb-item text-white"
+                            aria-current="page"
+                        >
+                            Kontakt
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- Contact Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="p-5 bg-light rounded">
+                    <div
+                        class="mx-auto text-center wow fadeIn"
+                        data-wow-delay="0.1s"
+                        style="max-width: 700px"
+                    >
+                        <h4
+                            class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+                        >
+                            Kontakt
+                        </h4>
+                        <h1 class="display-3">
+                            Skontaktuj się z nami w sprawie technologii smart
+                            home
+                        </h1>
+                        <p class="mb-5">
+                            Masz pytania dotyczące naszych rozwiązań smart home,
+                            inteligentnej automatyki lub nowoczesnych systemów
+                            dla domu? Nasz zespół jest gotowy odpowiedzieć na
+                            każde zapytanie i doradzić w zakresie doboru
+                            najlepszego sprzętu i konfiguracji systemów
+                            inteligentnego domu.
+                        </p>
+                    </div>
+                    <div class="row g-5 mb-5">
+                        <div class="col-lg-12 wow fadeIn" data-wow-delay="0.1s">
+                            <div
+                                class="d-flex w-100 border border-primary p-4 rounded bg-white"
+                            >
+                                <i
+                                    class="fas fa-map-marker-alt fa-2x text-primary me-4"
+                                ></i>
+                                <div class="">
+                                    <h4>Adres</h4>
+                                    <p class="mb-2">
+                                        Kenešary kószesi 20, Astana 010000
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                            <div
+                                class="d-flex w-100 border border-primary p-4 rounded bg-white"
+                            >
+                                <i
+                                    class="fas fa-envelope fa-2x text-primary me-4"
+                                ></i>
+                                <div class="">
+                                    <h4>Email</h4>
+                                    <p class="mb-2">
+                                        smart_mieszkanie@gmail.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div
+                                class="d-flex w-100 border border-primary p-4 rounded bg-white"
+                            >
+                                <i
+                                    class="fa fa-phone-alt fa-2x text-primary me-4"
+                                ></i>
+                                <div class="">
+                                    <h4>Telefon</h4>
+                                    <p class="mb-2">+77011551322</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-5">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                            <form action="thanks.html" method="get">
+                                <input
+                                    type="text"
+                                    class="w-100 form-control py-3 mb-5 border-primary"
+                                    placeholder="Twoje imię"
+                                    required
+                                />
+                                <input
+                                    type="email"
+                                    id="email"
+                                    class="w-100 form-control py-3 mb-5 border-primary"
+                                    placeholder="Twój email"
+                                    required
+                                />
+                                <textarea
+                                    class="w-100 form-control mb-5 border-primary"
+                                    rows="8"
+                                    cols="10"
+                                    placeholder="Twoja wiadomość"
+                                    required
+                                ></textarea>
+                                <button
+                                    class="w-100 btn btn-primary form-control py-3 border-primary text-white bg-primary"
+                                    type="submit"
+                                    id="submit"
+                                >
+                                    Wyślij
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="border border-primary h-100 rounded">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43985.73755369696!2d71.40544528467409!3d51.13680391795106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424586d097cbeff7%3A0x84bb0fdfcd0a550d!2sLine%20Brew%20Astana!5e0!3m2!1suk!2sua!4v1751867868307!5m2!1suk!2sua"
+                                    class="w-100 h-100 rounded"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid footer py-5 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="footer-item">
+                            <h2 class="fw-bold mb-3">
+                                <span class="text-primary mb-0">Smarte</span>
+                                <span class="text-secondary">Mieszkani</span>
+                            </h2>
+                            <p class="mb-4">
+                                Dziękujemy za odwiedzenie naszej strony o
+                                inteligentnych domach. Oferujemy nowoczesne
+                                systemy automatyki, bezpieczeństwa i sterowania,
+                                które zwiększają komfort życia. Nasz zespół dba
+                                o to, aby nowoczesne technologie były proste i
+                                dostępne dla każdego domu.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="footer-item">
+                            <div
+                                class="d-flex flex-column p-4 ps-5 text-dark border border-primary"
+                                style="border-radius: 0"
+                            >
+                                <p>Poniedziałek: 8:00 – 17:00</p>
+                                <p>Wtorek: 8:00 – 17:00</p>
+                                <p>Środa: 8:00 – 17:00</p>
+                                <p>Czwartek: 8:00 – 17:00</p>
+                                <p>Piątek: 8:00 – 17:00</p>
+                                <p>Sobota: 8:00 – 17:00</p>
+                                <p class="mb-0">Niedziela: nieczynne</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="footer-item">
+                            <h4
+                                class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+                            >
+                                NASZ ADRES
+                            </h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a href="" class="text-body mb-4"
+                                    ><i
+                                        class="fa fa-map-marker-alt text-primary me-3"
+                                    ></i>
+                                    Кенесары көшесі 20, Astana 010000
+                                </a>
+                                <a href="tel:+1000000000" class="text-body mb-4"
+                                    ><i
+                                        class="fa fa-phone-alt text-primary me-3"
+                                    ></i
+                                    >+77011551322</a
+                                >
+                                <a
+                                    href="mailto:info@businessconsult.com"
+                                    class="text-body"
+                                    ><i
+                                        class="fa fa-envelope text-primary me-3"
+                                    ></i>
+                                    smart_mieszkanie@gmail.com</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="footer-item">
+                            <h4
+                                class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+                            >
+                                LINKI
+                            </h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a href="index.html" class="text-body mb-4">
+                                    Strona główna
+                                </a>
+                                <a
+                                    href="terms-of-use.html"
+                                    class="text-body mb-4"
+                                    >Warunki użytkowania</a
+                                >
+                                <a
+                                    href="privacy-policy.html"
+                                    class="text-body mb-4"
+                                    >Polityka prywatności
+                                </a>
+                                <a href="cookie_policy.html" class="text-body"
+                                    >Polityka plików cookies
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Wykorzystanie plików cookies</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Ta strona używa plików cookies w celu zapewnienia wygody i
+                    spersonalizowanej obsługi.
+                    <a href="cookie_policy.html">Więcej informacji...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Akceptuję</button>
+                <button class="cookie-button" id="declineBtn">Odrzuć</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- Back to Top -->
+        <a
+            href="#"
+            class="btn btn-primary border-3 border-primary rounded-circle back-to-top"
+            ><i class="fa fa-arrow-up"></i
+        ></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>

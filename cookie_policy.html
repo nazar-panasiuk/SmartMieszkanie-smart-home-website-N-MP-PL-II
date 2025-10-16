@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>SmartMieszkanie</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta
+            content="inteligentny dom, nowoczesne technologie, automatyka domowa, smart home, sterowanie głosowe, inteligentne urządzenia, systemy bezpieczeństwa, oświetlenie smart, zdalne sterowanie, innowacyjne rozwiązania"
+            name="keywords"
+        />
+        <meta
+            content="Odkryj nowoczesne technologie dla inteligentnego domu. Sterowanie głosem, automatyka, inteligentne urządzenia i innowacyjne rozwiązania dla Twojego komfortu i bezpieczeństwa."
+            name="description"
+        />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Montserrat:wght@200;400;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar start -->
+        <div
+            class="container-fluid border-bottom bg-light wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div
+                class="container topbar bg-primary d-none d-lg-block py-2"
+                style="border-radius: 0 40px"
+            >
+                <div class="d-flex justify-content-between">
+                    <div class="top-info ps-2">
+                        <small class="me-3"
+                            ><i
+                                class="fas fa-map-marker-alt me-2 text-secondary"
+                            ></i>
+                            <a href="#" class="text-white"
+                                >Кенесары көшесі 20, Astana 010000</a
+                            ></small
+                        >
+                        <small class="me-3"
+                            ><i class="fas fa-envelope me-2 text-secondary"></i
+                            ><a href="#" class="text-white"
+                                >smart_mieszkanie@gmail.com</a
+                            ></small
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="container px-0">
+                <nav class="navbar navbar-light navbar-expand-xl py-3">
+                    <a href="index.html" class="navbar-brand"
+                        ><h1 class="text-primary display-6">
+                            Smart<span class="text-secondary">Mieszkanie</span>
+                        </h1></a
+                    >
+                    <button
+                        class="navbar-toggler py-2 px-3"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse"
+                    >
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a
+                                href="index.html"
+                                class="nav-item nav-link active"
+                                >Strona główna</a
+                            >
+                            <a href="about.html" class="nav-item nav-link"
+                                >O nas</a
+                            >
+                            <a href="service.html" class="nav-item nav-link"
+                                >Usługi</a
+                            >
+                            <a href="testimonial.html" class="nav-item nav-link"
+                                >Opinie</a
+                            >
+                            <a href="contact.html" class="nav-item nav-link"
+                                >Kontakt</a
+                            >
+                        </div>
+                        <div class="d-flex me-4">
+                            <div
+                                id="phone-tada"
+                                class="d-flex align-items-center justify-content-center"
+                            >
+                                <a
+                                    href=""
+                                    class="position-relative wow tada"
+                                    data-wow-delay=".9s"
+                                >
+                                    <i
+                                        class="fa fa-phone-alt text-primary fa-2x me-4"
+                                    ></i>
+                                    <div
+                                        class="position-absolute"
+                                        style="top: -7px; left: 20px"
+                                    >
+                                        <span
+                                            ><i
+                                                class="fa fa-comment-dots text-secondary"
+                                            ></i
+                                        ></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="d-flex flex-column pe-3 border-end border-primary"
+                            >
+                                <span class="text-primary">Masz pytania?</span>
+                                <a href="tel:77011551322"
+                                    ><span class="text-secondary"
+                                        >Darmowy numer: +77011551322</span
+                                    ></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        <main>
+            <article class="container additional-wrapper">
+                <div class="page__content" style="padding: 20px 0px">
+                    <h1>Polityka plików cookie</h1>
+
+                    <p>
+                        Nasza firma zajmująca się nowymi technologiami i
+                        systemami Smart Home dba o wygodę i jakość korzystania z
+                        naszej strony. W niniejszej Polityce plików cookie
+                        wyjaśniamy, jakie cookie stosujemy, w jakim celu oraz
+                        jak możesz nimi zarządzać podczas korzystania z naszej
+                        strony internetowej.
+                    </p>
+
+                    <h2>1. Czym są pliki cookie?</h2>
+                    <p>
+                        Pliki cookie to niewielkie pliki tekstowe, które są
+                        zapisywane na Twoim urządzeniu podczas odwiedzania
+                        strony. Pomagają one w poprawnym działaniu witryny,
+                        zapamiętywaniu Twoich ustawień oraz zbieraniu
+                        anonimowych statystyk użytkowania.
+                    </p>
+
+                    <h2>2. Jakie cookie stosujemy?</h2>
+                    <p>Używamy następujących typów plików cookie:</p>
+                    <ul>
+                        <li>
+                            <strong>Wymagane cookie:</strong> zapewniają
+                            podstawowe działanie strony.
+                        </li>
+                        <li>
+                            <strong>Funkcjonalne cookie:</strong> zapamiętują
+                            Twoje ustawienia i preferencje.
+                        </li>
+                        <li>
+                            <strong>Analityczne cookie:</strong> pomagają nam
+                            zrozumieć, w jaki sposób korzystasz ze strony, aby
+                            ją ulepszać.
+                        </li>
+                        <li>
+                            <strong>Reklamowe cookie:</strong> wykorzystywane są
+                            do wyświetlania spersonalizowanych treści i ofert
+                            związanych z technologiami Smart Home.
+                        </li>
+                    </ul>
+
+                    <h2>3. W jaki sposób używamy cookie?</h2>
+                    <p>Cookie pomagają nam:</p>
+                    <ul>
+                        <li>
+                            Ułatwić korzystanie ze strony i dostosować ją do
+                            Twoich potrzeb.
+                        </li>
+                        <li>
+                            Analizować ruch na stronie i ulepszać jej
+                            funkcjonalności.
+                        </li>
+                        <li>
+                            Zapewnić bezpieczeństwo oraz zapobiegać nadużyciom.
+                        </li>
+                        <li>
+                            Wyświetlać aktualne informacje o produktach i
+                            systemach Smart Home.
+                        </li>
+                    </ul>
+
+                    <h2>4. Zarządzanie plikami cookie</h2>
+                    <p>
+                        W każdej chwili możesz zmienić ustawienia plików cookie
+                        w swojej przeglądarce lub zrezygnować z ich używania.
+                        Pamiętaj jednak, że wyłączenie niektórych plików cookie
+                        może wpłynąć na funkcjonowanie strony i ograniczyć
+                        dostęp do niektórych funkcji.
+                    </p>
+
+                    <h2>5. Pliki cookie osób trzecich</h2>
+                    <p>
+                        Na naszej stronie mogą być używane pliki cookie
+                        pochodzące od zewnętrznych usług, takich jak systemy
+                        analityczne lub media społecznościowe. Nie kontrolujemy
+                        tych plików cookie i zalecamy zapoznanie się z ich
+                        politykami prywatności.
+                    </p>
+
+                    <h2>6. Zmiany w polityce cookie</h2>
+                    <p>
+                        Zastrzegamy sobie prawo do aktualizacji tej polityki.
+                        Wszystkie zmiany będą publikowane na tej stronie, a data
+                        ostatniej aktualizacji będzie widoczna na górze
+                        dokumentu. Zalecamy regularne sprawdzanie tego
+                        rozdziału.
+                    </p>
+
+                    <h2>7. Kontakt</h2>
+                    <p>
+                        Jeśli masz pytania dotyczące naszej polityki plików
+                        cookie, skontaktuj się z nami pod adresem e-mail:
+                        smart_mieszkanie@gmail.com.
+                    </p>
+
+                    <p>
+                        Dziękujemy za korzystanie z naszej strony i zaufanie do
+                        naszych systemów Smart Home!
+                    </p>
+                </div>
+            </article>
+        </main>
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid footer py-5 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="footer-item">
+                            <h2 class="fw-bold mb-3">
+                                <span class="text-primary mb-0">Smarte</span>
+                                <span class="text-secondary">Mieszkani</span>
+                            </h2>
+                            <p class="mb-4">
+                                Dziękujemy za odwiedzenie naszej strony o
+                                inteligentnych domach. Oferujemy nowoczesne
+                                systemy automatyki, bezpieczeństwa i sterowania,
+                                które zwiększają komfort życia. Nasz zespół dba
+                                o to, aby nowoczesne technologie były proste i
+                                dostępne dla każdego domu.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="footer-item">
+                            <div
+                                class="d-flex flex-column p-4 ps-5 text-dark border border-primary"
+                                style="border-radius: 0"
+                            >
+                                <p>Poniedziałek: 8:00 – 17:00</p>
+                                <p>Wtorek: 8:00 – 17:00</p>
+                                <p>Środa: 8:00 – 17:00</p>
+                                <p>Czwartek: 8:00 – 17:00</p>
+                                <p>Piątek: 8:00 – 17:00</p>
+                                <p>Sobota: 8:00 – 17:00</p>
+                                <p class="mb-0">Niedziela: nieczynne</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="footer-item">
+                            <h4
+                                class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+                            >
+                                NASZ ADRES
+                            </h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a href="" class="text-body mb-4"
+                                    ><i
+                                        class="fa fa-map-marker-alt text-primary me-3"
+                                    ></i>
+                                    Кенесары көшесі 20, Astana 010000
+                                </a>
+                                <a href="tel:+1000000000" class="text-body mb-4"
+                                    ><i
+                                        class="fa fa-phone-alt text-primary me-3"
+                                    ></i
+                                    >+77011551322</a
+                                >
+                                <a
+                                    href="mailto:info@businessconsult.com"
+                                    class="text-body"
+                                    ><i
+                                        class="fa fa-envelope text-primary me-3"
+                                    ></i>
+                                    smart_mieszkanie@gmail.com</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="footer-item">
+                            <h4
+                                class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius"
+                            >
+                                LINKI
+                            </h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a href="index.html" class="text-body mb-4">
+                                    Strona główna
+                                </a>
+                                <a
+                                    href="terms-of-use.html"
+                                    class="text-body mb-4"
+                                    >Warunki użytkowania</a
+                                >
+                                <a
+                                    href="privacy-policy.html"
+                                    class="text-body mb-4"
+                                    >Polityka prywatności
+                                </a>
+                                <a href="cookie_policy.html" class="text-body"
+                                    >Polityka plików cookies
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Wykorzystanie plików cookies</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Ta strona używa plików cookies w celu zapewnienia wygody i
+                    spersonalizowanej obsługi.
+                    <a href="cookie_policy.html">Więcej informacji...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Akceptuję</button>
+                <button class="cookie-button" id="declineBtn">Odrzuć</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- Back to Top -->
+        <a
+            href="#"
+            class="btn btn-primary border-3 border-primary rounded-circle back-to-top"
+            ><i class="fa fa-arrow-up"></i
+        ></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>
